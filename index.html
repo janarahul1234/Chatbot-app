@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ======== Style ======== -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- ======== Title ======== -->
+    <title>Chatbot</title>
+</head>
+
+<body>
+    <div class="background">
+        <img src="./assets/images/ellipse-01.svg" alt="ellipse-01" class="ellipse">
+        <img src="./assets/images/ellipse-02.svg" alt="ellipse-02" class="ellipse">
+        <img src="./assets/images/ellipse-03.svg" alt="ellipse-03" class="ellipse">
+    </div>
+
+    <main id="main">
+        <section class="hero-section flex flex-column align-center justify-center">
+            <div class="container flex flex-column align-center">
+                <div class="brand flex align-center">
+                    <img src="./assets/images/logo-01.svg" alt="barad-icon" class="brand__icon">
+                    <div class="brand__name">Chatbot</div>
+                </div>
+                <h1 class="title">
+                    <span class="font-bold">Chat with Us!</span><br />
+                    Your AI friendly is here
+                </h1>
+                <p class="description">
+                    Skip the hold, chat with a friend!
+                    Our AI assistants are here to help,
+                    not just hold the line.
+                </p>
+            </div>
+    
+            <div id="chat-button" class="btn btn--chat flex align-center justify-center">
+                <img src="./assets/images/logo-01.svg" alt="barad-icon" class="btn-chat__icon flex">
+            </div>
+        </section>
+
+        <section class="chat-screen flex flex-column">
+            <div class="chat-screen__header flex align-center justify-between">
+                <div class="brand flex align-center">
+                    <img src="./assets/images/logo-01.svg" alt="barad-icon" class="brand__icon">
+                    <div class="brand__name">Chatbot</div>
+                </div>
+
+                <img src="./assets/images/close-large-line.svg" alt="close-icon" id="close-button" class="btn">
+            </div>
+
+            <div id="message-area" class="chat-screen__message-area flex flex-column">
+                <div class="message message--bot">
+                    <p class="message__text">
+                        Hello,<br />
+                        How can I help you?
+                    </p>
+                </div>
+
+                
+            </div>
+
+            <form method="POST" id="message-box" class="chat-screen__message-box flex justify-between">
+                <textarea placeholder="Type something..." class="chat-screen__message-input"></textarea>
+
+                <button type="submit">
+                    <img src="./assets/images/send-plane-2-fill.svg" alt="barad-icon" class="icon">
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <!-- ======== Script ======== -->
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
